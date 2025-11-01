@@ -10,22 +10,27 @@ logger = setup_logger("nodes")
 def _summary_from_list(lines, last_n=4):
     return " | ".join(lines[-last_n:]) if lines else ""
 
-def user_input_node(state: Dict[str, Any]) -> Dict[str, Any]:
-    # Ensure state initialized
-    if not state or not state.get("topic"):
-        topic = input("Enter the topic for the debate (or press ENTER for default): ").strip()
-        if not topic:
-            topic = "Should AI be regulated like medicine?"
-        state["topic"] = topic
+def user_input_node(state):
+    # Ask the user for topic
+    print("\n--------------------------------------")
+    print("Enter the debate topic (or press Enter to use default).")
+    topic = input("Topic: ").strip()
+    print("--------------------------------------\n")
 
-    # ensure all expected keys exist
-    defaults = DebateStateFactory()
-    for k, v in defaults.items():
-        state.setdefault(k, v)
+    # If user presses Enter → use default topic
+    if not topic:
+        topic = "Should AI be regulated like medicine?"
+        print(f"Using default topic: {topic}\n")
 
-    logger.info("[UserInput] Topic: %s", state["topic"])
-    print(f"\nStarting debate on topic: {state['topic']}\n")
+    state["topic"] = topic
+
+    # Ensure messages list exists
+    if "messages" not in state:
+        state["messages"] = []
+
+    print(f"✅ Debate topic set to: {state['topic']}\n")
     return state
+
 
 def scientist_node(state: Dict[str, Any]) -> Dict[str, Any]:
     next_round = state.get("round_number", 0) + 1
