@@ -77,12 +77,14 @@ python -m venv .venv
 # On macOS/Linux:
 
 source .venv/bin/activate
+````
 2. Install Dependencies
-
+```bash
 # Install all the required Python packages using the requirements.txt file.
 
 
 pip install -r requirements.txt
+````
 
 3. Set Up Environment Variables
 
@@ -91,19 +93,19 @@ This project requires a Groq API key to function.
 Create a file named .env in the main debate/ directory.
 
 Open the .env file and add your Groq API key:
-
+```bash
 GROQ_API_KEY=your_groq_api_key_here
 GROQ_MODEL=llama-3.3-70b-versatile
-
+````
 Replace your_groq_api_key_here with your actual key.
 
-How to Run
+4.How to Run
 
 Once your virtual environment is active and your .env file is set up, run the main script from your terminal:
-
-
-  python main.py
-
+```bash
+pip install -r requirements.txt
+python main.py
+```
 
 The application will start and prompt you to enter a debate topic. The debate will run for 4 rounds, after which the Judge's verdict will be printed to the console.
 
