@@ -7,6 +7,7 @@ This system is built with a stateful graph that manages the flow of the conversa
 # Demo video
 [click on this for explnation]()
 
+
 ## Features
 
 * **Multi-Agent:** Includes Scientist, Philosopher, and Judge agents.
@@ -19,6 +20,7 @@ This system is built with a stateful graph that manages the flow of the conversa
 ## Project Structure
 
 debate/
+
 │
 
 ├── main.py # Starts and manages the debate workflow
