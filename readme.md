@@ -4,6 +4,8 @@
 This project is a command-line multi-agent debate system built using LangGraph. It simulates a debate between a "Scientist" agent and a "Philosopher" agent on a user-provided topic. A "Judge" agent reviews the debate and declares a winner after a set number of rounds.
 
 This system is built with a stateful graph that manages the flow of the conversation, logs the debate, and visualizes its own structure.
+# Demo video
+[click on this for explnation]()
 
 ## Features
 
@@ -18,6 +20,7 @@ This system is built with a stateful graph that manages the flow of the conversa
 
 debate/
 │
+
 ├── main.py # Starts and manages the debate workflow
 
 ├── graph_nodes.py # Logic for Scientist, Philosopher, Judge, and User input nodes
@@ -28,10 +31,9 @@ debate/
 
 ├── dag_diagram.py # Generates DAG visualization of the debate flow
 
-│
 ├── requirements.txt # Python dependencies
 
-│
+
 ├── debate_log.txt # Debate transcript logs (auto-generated)
 
 └── debate_graph.png # DAG flow diagram (auto-generated)
@@ -79,7 +81,9 @@ source .venv/bin/activate
 
 
 pip install -r requirements.txt
+
 3. Set Up Environment Variables
+
 This project requires a Groq API key to function.
 
 Create a file named .env in the main debate/ directory.
@@ -88,9 +92,11 @@ Open the .env file and add your Groq API key:
 
 GROQ_API_KEY=your_groq_api_key_here
 GROQ_MODEL=llama-3.3-70b-versatile
+
 Replace your_groq_api_key_here with your actual key.
 
 How to Run
+
 Once your virtual environment is active and your .env file is set up, run the main script from your terminal:
 
 
