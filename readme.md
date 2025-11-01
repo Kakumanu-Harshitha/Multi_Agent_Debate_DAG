@@ -87,13 +87,11 @@ pip install -r requirements.txt
 ````
 
 3. Set Up Environment Variables
-
-This project requires a Groq API key to function.
-
-Create a file named .env in the main debate/ directory.
-
-Open the .env file and add your Groq API key:
 ```bash
+# This project requires a Groq API key to function.
+#Create a file named .env in the main debate/ directory.
+#Open the .env file and add your Groq API key:
+
 GROQ_API_KEY=your_groq_api_key_here
 GROQ_MODEL=llama-3.3-70b-versatile
 ````
@@ -101,8 +99,9 @@ Replace your_groq_api_key_here with your actual key.
 
 4.How to Run
 
-Once your virtual environment is active and your .env file is set up, run the main script from your terminal:
+
 ```bash
+#Once your virtual environment is active and your .env file is set up, run the main script from your terminal:
 pip install -r requirements.txt
 python main.py
 ```
