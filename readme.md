@@ -5,7 +5,7 @@ This project is a command-line multi-agent debate system built using LangGraph. 
 
 This system is built with a stateful graph that manages the flow of the conversation, logs the debate, and visualizes its own structure.
 # Demo video
-[click on this for explnation](https://1drv.ms/v/c/46548f75de1610db/EeIPd8niNzBFmXYkASrhVjIB_T7oMHVb2hd4j85__TNGmg?e=h2uQQs)
+[click on this for explnation](https://1drv.ms/v/c/695d4659be40ade4/EX4LwljQR55Okx3GB_ojtUMBB8V5FQ_t0ygNJW5vMkxvCA?e=DduvRM)
 
 
 ## Features
