@@ -4,9 +4,6 @@
 This project is a command-line multi-agent debate system built using LangGraph. It simulates a debate between a "Scientist" agent and a "Philosopher" agent on a user-provided topic. A "Judge" agent reviews the debate and declares a winner after a set number of rounds.
 
 This system is built with a stateful graph that manages the flow of the conversation, logs the debate, and visualizes its own structure.
-# Demo video
-[click on this for explnation](https://1drv.ms/v/c/46548f75de1610db/EXzxCzd9YT9LptTxg2pEpzEB01lrjQKPd6L01DN7qSvYVQ?e=ZWaDnGv)
-
 
 ## Features
 
